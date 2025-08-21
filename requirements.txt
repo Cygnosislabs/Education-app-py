@@ -1,0 +1,12 @@
+flask
+flask-cors
+langchain
+langchain-core
+langchainhub
+langchain-community
+langchain-huggingface
+sentence-transformers
+huggingface-hub
+faiss-cpu
+httpx
+
