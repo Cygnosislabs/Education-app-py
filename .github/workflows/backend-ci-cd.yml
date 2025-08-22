@@ -16,12 +16,11 @@ jobs:
       - name: Deploy to server via SSH
         uses: appleboy/ssh-action@v0.1.7
         with:
-          host: 65.0.30.83
+          host: 3.110.159.124
           username: ec2-user
           key: ${{ secrets.SERVER_SSH_KEY }}
           port: 22
           script: |
-            sudo su
             cd /home/ec2-user/Education-api/React
             git pull py master
             docker-compose build backend
